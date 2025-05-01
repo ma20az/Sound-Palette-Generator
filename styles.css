@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic+Expanded+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0b30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  border: 2px solid #0a105c;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+  font-family: "Open Sans", sans-serif;
+  background-color: hsla(231, 59%, 34%, 0.5);
+}
+
+.box h2,
+.box h4 {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(109, 121, 190);
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.box h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  background-color: hsla(236, 46%, 39%, 0.5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 12px 30px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+
+.pause-button {
+  background-color: hsla(236, 46%, 39%, 0.5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.pause-button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+
+.volume-button {
+  background-color: hsla(236, 46%, 39%, 0.5);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border: none;
+  color: white;
+}
+
+.volume-button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
