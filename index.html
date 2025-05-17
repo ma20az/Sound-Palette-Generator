@@ -11,34 +11,38 @@
     />
   </head>
   <body>
+    <!-- This is the header area -->
     <div class="box">
       <h2>Sound Palette Generator</h2>
       <h4>Select a theme to generate a sound palette</h4>
 
+      <!-- This is the button container -->
       <div class="button-container">
         <button>Relax</button>
         <button>Focus</button>
         <button>Energize</button>
       </div>
 
-      <div class="pause-button" id="playPauseBtn">
-        <i class="fa-solid fa-play"></i>
+      <!-- This is the controls container -->
+      <div class="controls-container">
+        <button class="play-button">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <input
+          type="range"
+          class="sound-bar"
+          value="0"
+          min="0"
+          max="100"
+          step="1"
+        />
+        <button class="volume-button">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
       </div>
-
-      <div class="volume-button">
-        <i class="fa-solid fa-volume-high"></i>
-      </div>
-
-      <input
-        type="range"
-        id="soundBar"
-        class="sound-bar"
-        value="0"
-        max="100"
-        step="1"
-      />
     </div>
 
+    <!-- This is the JavaScript locating code -->
     <script src="script.js"></script>
   </body>
 </html>

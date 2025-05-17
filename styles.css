@@ -13,6 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* This is starting of the main-box container styling */
 .box {
   border: 2px solid #0a105c;
   border-radius: 12px;
@@ -51,6 +52,7 @@ body {
   width: 100%;
 }
 
+/* This is the starting point of the button styling */
 button {
   background-color: hsla(236, 46%, 39%, 0.5);
   color: white;
@@ -72,7 +74,17 @@ button:hover {
   transition: all 0.5s ease-in-out;
 }
 
-.pause-button {
+/* This is the startin point of the controls-container styling */
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.play-button {
   background-color: hsla(236, 46%, 39%, 0.5);
   color: white;
   border: none;
@@ -80,18 +92,15 @@ button:hover {
   width: 50px;
   height: 50px;
   font-size: 16px;
-  padding: 10px 20px;
+  padding: 10px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: -20px;
-  right: 130px;
   transition: all 0.3s ease;
 }
 
-.pause-button:hover {
+.play-button:hover {
   background-color: black;
   color: white;
   transform: scale(1.05);
@@ -100,20 +109,18 @@ button:hover {
 
 .volume-button {
   background-color: hsla(236, 46%, 39%, 0.5);
+  color: white;
+  border: none;
   border-radius: 10px;
   width: 50px;
   height: 50px;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   transition: all 0.3s ease;
-  padding: 10px;
-  border: none;
-  color: white;
-  position: relative;
-  left: 130px;
-  bottom: 16px;
 }
 
 .volume-button:hover {
@@ -124,8 +131,10 @@ button:hover {
 }
 
 .sound-bar {
-  width: 60%;
+  flex-grow: 1;
+  max-width: 60%;
   height: 8px;
+  margin: 0 10px;
   background-color: #ddd;
   border-radius: 5px;
   cursor: pointer;
@@ -150,3 +159,4 @@ button:hover {
   border-radius: 50%;
   cursor: pointer;
 }
+/* This is the end point of the styling */
