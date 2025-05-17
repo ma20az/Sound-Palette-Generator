@@ -21,14 +21,24 @@
         <button>Energize</button>
       </div>
 
-      <div class="pause-button">
-        <i class="fa-solid fa-pause"></i>
+      <div class="pause-button" id="playPauseBtn">
+        <i class="fa-solid fa-play"></i>
       </div>
 
       <div class="volume-button">
         <i class="fa-solid fa-volume-high"></i>
       </div>
+
+      <input
+        type="range"
+        id="soundBar"
+        class="sound-bar"
+        value="0"
+        max="100"
+        step="1"
+      />
     </div>
 
+    <script src="script.js"></script>
   </body>
 </html>

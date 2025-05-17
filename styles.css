@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
 
 .box {
@@ -24,13 +25,11 @@ body {
   flex-direction: column;
   width: 350px;
   height: 350px;
-  font-family: "Open Sans", sans-serif;
   background-color: hsla(231, 59%, 34%, 0.5);
 }
 
 .box h2,
 .box h4 {
-  font-family: "Open Sans", sans-serif;
   color: rgb(109, 121, 190);
   text-align: center;
 }
@@ -57,7 +56,6 @@ button {
   color: white;
   border: none;
   border-radius: 10px;
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   padding: 12px 30px;
   cursor: pointer;
@@ -74,27 +72,24 @@ button:hover {
   transition: all 0.5s ease-in-out;
 }
 
-
-/* Play/Pause button */
 .pause-button {
-    background-color: hsla(236, 46%, 39%, 0.5);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 16px;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 130px; /* Place the Pause button to the left */
-    bottom: -20px; /* Position just above the bottom, near Energize */
-    position: relative;
-    transition: all 0.3s ease;
-  }
-  
+  background-color: hsla(236, 46%, 39%, 0.5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -20px;
+  right: 130px;
+  transition: all 0.3s ease;
+}
 
 .pause-button:hover {
   background-color: black;
@@ -103,27 +98,55 @@ button:hover {
   transition: all 0.5s ease-in-out;
 }
 
-/* Volume button */
 .volume-button {
-    background-color: hsla(236, 46%, 39%, 0.5);
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    padding: 10px;
-    border: none;
-    color: white;
-    position: relative;
-    left: 130px; /* Place the Volume button to the right */
-    bottom: 16px; /* Position just above the bottom, near Energize */
-  }
+  background-color: hsla(236, 46%, 39%, 0.5);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border: none;
+  color: white;
+  position: relative;
+  left: 130px;
+  bottom: 16px;
+}
+
 .volume-button:hover {
   background-color: black;
   color: white;
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
+}
+
+.sound-bar {
+  width: 60%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.sound-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #0a0b30;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sound-bar::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #0a0b30;
+  border-radius: 50%;
+  cursor: pointer;
 }
